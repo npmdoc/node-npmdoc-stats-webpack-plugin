@@ -1,9 +1,14 @@
-# api documentation for  [stats-webpack-plugin (v0.6.0)](https://github.com/unindented/stats-webpack-plugin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-stats-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stats-webpack-plugin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stats-webpack-plugin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stats-webpack-plugin)
+# npmdoc-stats-webpack-plugin
+
+#### api documentation for  [stats-webpack-plugin (v0.6.0)](https://github.com/unindented/stats-webpack-plugin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-stats-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stats-webpack-plugin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stats-webpack-plugin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stats-webpack-plugin)
+
 #### Write the stats of a build to a file.
 
-[![NPM](https://nodei.co/npm/stats-webpack-plugin.png?downloads=true)](https://www.npmjs.com/package/stats-webpack-plugin)
+[![NPM](https://nodei.co/npm/stats-webpack-plugin.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/stats-webpack-plugin)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-stats-webpack-plugin_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-stats-webpack-plugin/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Daniel Perez Alvarez",
-        "email": "unindented@gmail.com",
         "url": "http://unindented.org/"
     },
     "bugs": {
@@ -53,8 +57,7 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "unindented",
-            "email": "unindented@gmail.com"
+            "name": "unindented"
         }
     ],
     "name": "stats-webpack-plugin",
@@ -62,7 +65,6 @@
     "peerDependencies": {
         "webpack": "^1.0||^2.1.0-beta||^2.2.0-rc"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/unindented/stats-webpack-plugin.git"
@@ -72,19 +74,10 @@
         "spec": "mocha",
         "test": "npm run lint && npm run spec"
     },
-    "version": "0.6.0"
+    "version": "0.6.0",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module stats-webpack-plugin](#apidoc.module.stats-webpack-plugin)
-
-
-
-# <a name="apidoc.module.stats-webpack-plugin"></a>[module stats-webpack-plugin](#apidoc.module.stats-webpack-plugin)
 
 
 
