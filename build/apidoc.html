@@ -61,12 +61,165 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.stats-webpack-plugin">module stats-webpack-plugin</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stats-webpack-plugin.stats-webpack-plugin">
+            function <span class="apidocSignatureSpan"></span>stats-webpack-plugin
+            <span class="apidocSignatureSpan">(output, options, cache)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stats-webpack-plugin.index">
+            function <span class="apidocSignatureSpan">stats-webpack-plugin.</span>index
+            <span class="apidocSignatureSpan">(output, options, cache)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stats-webpack-plugin.</span>index.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stats-webpack-plugin.index">module stats-webpack-plugin.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stats-webpack-plugin.index.index">
+            function <span class="apidocSignatureSpan">stats-webpack-plugin.</span>index
+            <span class="apidocSignatureSpan">(output, options, cache)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stats-webpack-plugin.index.prototype">module stats-webpack-plugin.index.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stats-webpack-plugin.index.prototype.apply">
+            function <span class="apidocSignatureSpan">stats-webpack-plugin.index.prototype.</span>apply
+            <span class="apidocSignatureSpan">(compiler)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.stats-webpack-plugin" id="apidoc.module.stats-webpack-plugin">module stats-webpack-plugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stats-webpack-plugin.stats-webpack-plugin" id="apidoc.element.stats-webpack-plugin.stats-webpack-plugin">
+        function <span class="apidocSignatureSpan"></span>stats-webpack-plugin
+        <span class="apidocSignatureSpan">(output, options, cache)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StatsPlugin(output, options, cache) {
+  this.output = output
+  this.options = options
+  this.cache = cache
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stats-webpack-plugin.index" id="apidoc.element.stats-webpack-plugin.index">
+        function <span class="apidocSignatureSpan">stats-webpack-plugin.</span>index
+        <span class="apidocSignatureSpan">(output, options, cache)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StatsPlugin(output, options, cache) {
+  this.output = output
+  this.options = options
+  this.cache = cache
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stats-webpack-plugin.index" id="apidoc.module.stats-webpack-plugin.index">module stats-webpack-plugin.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stats-webpack-plugin.index.index" id="apidoc.element.stats-webpack-plugin.index.index">
+        function <span class="apidocSignatureSpan">stats-webpack-plugin.</span>index
+        <span class="apidocSignatureSpan">(output, options, cache)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StatsPlugin(output, options, cache) {
+  this.output = output
+  this.options = options
+  this.cache = cache
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stats-webpack-plugin.index.prototype" id="apidoc.module.stats-webpack-plugin.index.prototype">module stats-webpack-plugin.index.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stats-webpack-plugin.index.prototype.apply" id="apidoc.element.stats-webpack-plugin.index.prototype.apply">
+        function <span class="apidocSignatureSpan">stats-webpack-plugin.index.prototype.</span>apply
+        <span class="apidocSignatureSpan">(compiler)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function apply(compiler) {
+  var output = this.output
+  var options = this.options
+  var cache = this.cache
+
+  compiler.plugin(&#x27;emit&#x27;, function onEmit (compilation, done) {
+    var result
+
+    compilation.assets[output] = {
+      size: function getSize () {
+        return result &#x26;&#x26; result.length || 0
+      },
+      source: function getSource () {
+        var stats = compilation.getStats().toJson(options)
+        var result
+
+        if (cache) {
+          cache = _.merge(cache, stats)
+          result = JSON.stringify(cache)
+        } else {
+          result = JSON.stringify(stats)
+        }
+        return result
+      }
+    }
+    done()
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
